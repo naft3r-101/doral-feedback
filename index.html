@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="feedback-card">
+    <div class="logo-circle">
+      <img src="img/logo.png" alt="Logo" class="logo-img">
+    </div>
+    <h2>How was your visit?</h2>
+    <p>Thanks for visiting Bombay Darbar. Could you take a few seconds to let us know how you would rate your experience?</p>
+    <div class="stars">
+      <span class="star" data-rating="1">&#9734;</span>
+      <span class="star" data-rating="2">&#9734;</span>
+      <span class="star" data-rating="3">&#9734;</span>
+      <span class="star" data-rating="4">&#9734;</span>
+      <span class="star" data-rating="5">&#9734;</span>
+    </div>
+  </div>
+
+  <!-- Feedback Popup for ratings 1-3 -->
+  <div class="feedback-popup" id="feedbackPopup">
+    <div class="popup-content">
+      <h2>We'd love to hear more!</h2>
+      <p>Please share your feedback with us to help improve our services.</p>
+      <textarea placeholder="Write your feedback here..." id="feedbackText"></textarea>
+      <button id="submitFeedbackButton" disabled onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+  </div>
+
+  <!-- Thank You Popup -->
+  <div class="thankyou-popup" id="thankYouPopup">
+    <div class="popup-content">
+      <h2>Thank you for your feedback!</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
