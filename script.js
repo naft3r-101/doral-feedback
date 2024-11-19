@@ -11,7 +11,7 @@ document.querySelectorAll('.star').forEach(star => {
       // Handle rating actions
       if (rating >= 4) {
         // Redirect for 4 or 5 star ratings
-        window.location.href = 'https://g.page/r/CbJwDOO9B6TZEBM/review';
+        window.location.href = 'https://g.page/r/CRVF0z36zEZIEBM/review';
       } else {
         // Show feedback popup for 1-3 star ratings
         document.getElementById('feedbackPopup').style.display = 'flex';
